@@ -6,6 +6,9 @@ export default defineEventHandler( async (event) => {
     console.log(process);
     // const hasil = await db.select().from(tabletest).all()
 
-    const hasil = 'hello'
-    return Response.json(hasil)
+    // const hasil = 'hello'
+    return Response.json({
+        'prosesenv' : process,
+        // 'envv': env ? env : ''
+    })
 })
