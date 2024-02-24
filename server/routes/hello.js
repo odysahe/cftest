@@ -8,7 +8,7 @@ export default defineEventHandler( async (event) => {
 
     // const hasil = 'hello'
     return Response.json({
-        'prosesenv' : process,
+        'prosesenv' : process.env,
         'event':event
         // 'envv': env ? env : ''
     })
